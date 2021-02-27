@@ -1,0 +1,350 @@
+﻿{
+  "AzureBlobImportFO": [
+    {
+      "Environment": "DEV",
+      "IntegrationName": "Raf125",
+      "MessageType": "SonwinRafr125",
+      "D365FO": "norlys-erp-dev02e3bd17e6d4c5113edevaos.cloudax.dynamics.com",
+      "recurrence-frequency": "Second",
+      "recurrence-interval": "15"
+    },
+    {
+      "Environment": "INTTEST",
+      "IntegrationName": "Raf125",
+      "MessageType": "SonwinRafr125",
+      "D365FO": "norlys-erp-test0115c97be83dc82961aos.cloudax.dynamics.com",
+      "recurrence-frequency": "Second",
+      "recurrence-interval": "15"
+    },
+    {
+      "Environment": "UAT",
+      "IntegrationName": "Raf125",
+      "MessageType": "SonwinRafr125",
+      "D365FO": "norlys.sandbox.operations.dynamics.com",
+      "recurrence-frequency": "Second",
+      "recurrence-interval": "15"
+    },
+    {
+      "Environment": "PROD",
+      "IntegrationName": "Raf125",
+      "MessageType": "SonwinRafr125",
+      "D365FO": "norlys-erp.operations.dynamics.com",
+      "recurrence-frequency": "Second",
+      "recurrence-interval": "15"
+    }
+  ],
+  "AzureBlobOutboundFile": [
+    {
+      "Environment": "DEV",
+      "IntegrationName": "Raf125",
+      "MessageType": "SonwinRafr125",
+      "WriteRootFolder": "\\\\T580-MARTINVYUG\\Norlys\\dev\\outbound",
+      "recurrence-frequency": "Second",
+      "recurrence-interval": "15"
+    },
+    {
+      "Environment": "INTTEST",
+      "IntegrationName": "Raf125",
+      "MessageType": "SonwinRafr125",
+      "WriteRootFolder": "\\\\T580-MARTINVYUG\\Norlys\\INTTEST",
+      "recurrence-frequency": "Second",
+      "recurrence-interval": "15"
+    },
+    {
+      "Environment": "UAT",
+      "IntegrationName": "Raf125",
+      "MessageType": "SonwinRafr125",
+      "WriteRootFolder": "\\\\prerpfile01.eniig.org\\D365FO-UAT\\Sonwin\\import\\FromSonwin",
+      "recurrence-frequency": "Second",
+      "recurrence-interval": "15"
+    },
+    {
+      "Environment": "PROD",
+      "IntegrationName": "Raf125",
+      "MessageType": "SonwinRafr125",
+      "WriteRootFolder": "\\\\prerpfile01.eniig.org\\D365FO-prod\\Sonwin\\import\\FromSonwin",
+      "recurrence-frequency": "Second",
+      "recurrence-interval": "15"
+    }
+  ],
+  "FileReader": [
+    {
+      "Environment": "DEV",
+      "IntegrationName": "Raf125",
+      "RootFolder": "\\\\T580-MARTINVYUG\\Norlys\\dev",
+      "recurrence-frequency": "Minute",
+      "recurrence-interval": "10"
+    },
+    {
+      "Environment": "INTTEST",
+      "IntegrationName": "Raf125",
+      "RootFolder": "\\\\T580-MARTINVYUG\\Norlys\\INTTEST",
+      "recurrence-frequency": "Minute",
+      "recurrence-interval": "10"
+    },
+    {
+      "Environment": "UAT",
+      "IntegrationName": "Raf125",
+      "RootFolder": "\\\\prerpfile01.eniig.org\\D365FO-UAT\\Sonwin\\import\\FromSonwin",
+      "recurrence-frequency": "Minute",
+      "recurrence-interval": "10"
+    },
+    {
+      "Environment": "PROD",
+      "IntegrationName": "Raf125",
+      "RootFolder": "\\\\prerpfile01.eniig.org\\D365FO-prod\\Sonwin\\import\\FromSonwin",
+      "recurrence-frequency": "Minute",
+      "recurrence-interval": "10"
+    }
+  ],
+  "LogicApps": [
+    {
+      "LogicAppName": "FileReader",
+      "Environment": "DEV",
+      "IntegrationName": "Raf125",
+      "Filename": "LogicApp.parameters.FileReader.Raf125.DEV.json"
+    },
+    {
+      "LogicAppName": "FileReader",
+      "Environment": "INTTEST",
+      "IntegrationName": "Raf125",
+      "Filename": "LogicApp.parameters.FileReader.Raf125.INTTEST.json"
+    },
+    {
+      "LogicAppName": "FileReader",
+      "Environment": "UAT",
+      "IntegrationName": "Raf125",
+      "Filename": "LogicApp.parameters.FileReader.Raf125.UAT.json"
+    },
+    {
+      "LogicAppName": "FileReader",
+      "Environment": "PROD",
+      "IntegrationName": "Raf125",
+      "Filename": "LogicApp.parameters.FileReader.Raf125.PROD.json"
+    },
+    {
+      "LogicAppName": "FileReader",
+      "Environment": "DEV",
+      "IntegrationName": "ENTA",
+      "Filename": "LogicApp.parameters.FileReader.ENTA.DEV.json"
+    },
+    {
+      "LogicAppName": "FileReader",
+      "Environment": "INTEST",
+      "IntegrationName": "ENTA",
+      "Filename": "LogicApp.parameters.FileReader.ENTA.INTEST.json"
+    },
+    {
+      "LogicAppName": "FileReader",
+      "Environment": "UAT",
+      "IntegrationName": "ENTA",
+      "Filename": "LogicApp.parameters.FileReader.ENTA.UAT.json"
+    },
+    {
+      "LogicAppName": "FileReader",
+      "Environment": "PROD",
+      "IntegrationName": "ENTA",
+      "Filename": "LogicApp.parameters.FileReader.ENTA.PROD.json"
+    },
+    {
+      "LogicAppName": "ServiceBusImportFO",
+      "Environment": "DEV",
+      "IntegrationName": "Raf125",
+      "Filename": "LogicApp.parameters.ServiceBusImportFO.Raf125.DEV.json"
+    },
+    {
+      "LogicAppName": "ServiceBusImportFO",
+      "Environment": "INTTEST",
+      "IntegrationName": "Raf125",
+      "Filename": "LogicApp.parameters.ServiceBusImportFO.Raf125.INTTEST.json"
+    },
+    {
+      "LogicAppName": "ServiceBusImportFO",
+      "Environment": "UAT",
+      "IntegrationName": "Raf125",
+      "Filename": "LogicApp.parameters.ServiceBusImportFO.Raf125.UAT.json"
+    },
+    {
+      "LogicAppName": "ServiceBusImportFO",
+      "Environment": "PROD",
+      "IntegrationName": "Raf125",
+      "Filename": "LogicApp.parameters.ServiceBusImportFO.Raf125.PROD.json"
+    },
+    {
+      "LogicAppName": "ServiceBusImportFO",
+      "Environment": "DEV",
+      "IntegrationName": "ENTA",
+      "Filename": "LogicApp.parameters.ServiceBusImportFO.ENTA.DEV.json"
+    },
+    {
+      "LogicAppName": "ServiceBusImportFO",
+      "Environment": "INTTEST",
+      "IntegrationName": "ENTA",
+      "Filename": "LogicApp.parameters.ServiceBusImportFO.ENTA.INTTEST.json"
+    },
+    {
+      "LogicAppName": "ServiceBusImportFO",
+      "Environment": "UAT",
+      "IntegrationName": "ENTA",
+      "Filename": "LogicApp.parameters.ServiceBusImportFO.ENTA.UAT.json"
+    },
+    {
+      "LogicAppName": "ServiceBusImportFO",
+      "Environment": "PROD",
+      "IntegrationName": "ENTA",
+      "Filename": "LogicApp.parameters.ServiceBusImportFO.ENTA.PROD.json"
+    },
+    {
+      "LogicAppName": "AzureBlobImportFO",
+      "Environment": "DEV",
+      "IntegrationName": "Raf125",
+      "Filename": "LogicApp.parameters.AzureBlobImportFO.Raf125.DEV.json"
+    },
+    {
+      "LogicAppName": "AzureBlobImportFO",
+      "Environment": "INTTEST",
+      "IntegrationName": "Raf125",
+      "Filename": "LogicApp.parameters.AzureBlobImportFO.Raf125.INTTEST.json"
+    },
+    {
+      "LogicAppName": "AzureBlobImportFO",
+      "Environment": "UAT",
+      "IntegrationName": "Raf125",
+      "Filename": "LogicApp.parameters.AzureBlobImportFO.Raf125.UAT.json"
+    },
+    {
+      "LogicAppName": "AzureBlobImportFO",
+      "Environment": "PROD",
+      "IntegrationName": "Raf125",
+      "Filename": "LogicApp.parameters.AzureBlobImportFO.Raf125.PROD.json"
+    },
+    {
+      "LogicAppName": "AzureBlobImportFO",
+      "Environment": "DEV",
+      "IntegrationName": "ENTA",
+      "Filename": "LogicApp.parameters.AzureBlobImportFO.ENTA.DEV.json"
+    },
+    {
+      "LogicAppName": "AzureBlobImportFO",
+      "Environment": "INTTEST",
+      "IntegrationName": "ENTA",
+      "Filename": "LogicApp.parameters.AzureBlobImportFO.ENTA.INTTEST.json"
+    },
+    {
+      "LogicAppName": "AzureBlobImportFO",
+      "Environment": "UAT",
+      "IntegrationName": "ENTA",
+      "Filename": "LogicApp.parameters.AzureBlobImportFO.ENTA.UAT.json"
+    },
+    {
+      "LogicAppName": "AzureBlobImportFO",
+      "Environment": "PROD",
+      "IntegrationName": "ENTA",
+      "Filename": "LogicApp.parameters.AzureBlobImportFO.ENTA.PROD.json"
+    },
+    {
+      "LogicAppName": "WebserviceInboundFO",
+      "Environment": "DEV",
+      "IntegrationName": "Raf125",
+      "Filename": "LogicApp.parameters.WebserviceInboundFO.Raf125.DEV.json"
+    },
+    {
+      "LogicAppName": "ServiceBusOutboundFile",
+      "Environment": "DEV",
+      "IntegrationName": "Raf125",
+      "Filename": "LogicApp.parameters.ServiceBusOutboundFile.Raf125.DEV.json"
+    },
+    {
+      "LogicAppName": "AzureBlobOutboundFile",
+      "Environment": "DEV",
+      "IntegrationName": "Raf125",
+      "Filename": "LogicApp.parameters.AzureBlobOutboundFile.Raf125.DEV.json"
+    }
+  ],
+  "ServiceBusImportFO": [
+    {
+      "Environment": "DEV",
+      "IntegrationName": "RAF125",
+      "MessageType": "SonwinRafr125",
+      "D365FO": "norlys-erp-dev02e3bd17e6d4c5113edevaos.cloudax.dynamics.com",
+      "recurrence-frequency": "Second",
+      "recurrence-interval": "3"
+    },
+    {
+      "Environment": "INTTEST",
+      "IntegrationName": "RAF125",
+      "MessageType": "SonwinRafr125",
+      "D365FO": "norlys-erp-test0115c97be83dc82961aos.cloudax.dynamics.com",
+      "recurrence-frequency": "Second",
+      "recurrence-interval": "3"
+    },
+    {
+      "Environment": "UAT",
+      "IntegrationName": "RAF125",
+      "MessageType": "SonwinRafr125",
+      "D365FO": "norlys.sandbox.operations.dynamics.com",
+      "recurrence-frequency": "Second",
+      "recurrence-interval": "3"
+    },
+    {
+      "Environment": "PROD",
+      "IntegrationName": "RAF125",
+      "MessageType": "SonwinRafr125",
+      "D365FO": "norlys-erp.operations.dynamics.com",
+      "recurrence-frequency": "Second",
+      "recurrence-interval": "3"
+    }
+  ],
+  "ServiceBusOutboundFile": [
+    {
+      "Environment": "DEV",
+      "IntegrationName": "Raf125",
+      "MessageType": "SonwinRafr125",
+      "WriteRootFolder": "\\\\T580-MARTINVYUG\\Norlys\\dev\\outbound",
+      "recurrence-frequency": "Second",
+      "recurrence-interval": "15"
+    },
+    {
+      "Environment": "INTTEST",
+      "IntegrationName": "Raf125",
+      "MessageType": "SonwinRafr125",
+      "WriteRootFolder": "\\\\T580-MARTINVYUG\\Norlys\\INTTEST",
+      "recurrence-frequency": "Second",
+      "recurrence-interval": "15"
+    },
+    {
+      "Environment": "UAT",
+      "IntegrationName": "Raf125",
+      "MessageType": "SonwinRafr125",
+      "WriteRootFolder": "\\\\prerpfile01.eniig.org\\D365FO-UAT\\Sonwin\\import\\FromSonwin",
+      "recurrence-frequency": "Second",
+      "recurrence-interval": "15"
+    },
+    {
+      "Environment": "PROD",
+      "IntegrationName": "Raf125",
+      "MessageType": "SonwinRafr125",
+      "WriteRootFolder": "\\\\prerpfile01.eniig.org\\D365FO-prod\\Sonwin\\import\\FromSonwin",
+      "recurrence-frequency": "Second",
+      "recurrence-interval": "15"
+    }
+  ],
+  "WebserviceInboundFO": [
+    {
+      "Environment": "DEV",
+      "IntegrationName": "RAF125"
+    },
+    {
+      "Environment": "INTTEST",
+      "IntegrationName": "RAF125"
+    },
+    {
+      "Environment": "UAT",
+      "IntegrationName": "RAF125"
+    },
+    {
+      "Environment": "PROD",
+      "IntegrationName": "RAF125"
+    }
+  ]
+}
